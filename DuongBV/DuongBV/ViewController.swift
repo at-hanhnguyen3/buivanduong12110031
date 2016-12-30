@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  DuongBV
 //
-//  Created by OceanMAC on 12/23/16.
+//  Created by OceanMAC on 12/12/16.
 //  Copyright (c) 2016 OceanMAC. All rights reserved.
 //
 

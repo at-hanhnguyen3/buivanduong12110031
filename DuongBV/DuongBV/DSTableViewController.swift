@@ -2,7 +2,7 @@
 //  DSTableViewController.swift
 //  DuongBV
 //
-//  Created by OceanMAC on 12/23/16.
+//  Created by OceanMAC on 12/12/16.
 //  Copyright (c) 2016 OceanMAC. All rights reserved.
 //
 
@@ -28,12 +28,12 @@ class DSTableViewController: UITableViewController {
             
             /*let trimmed = (string as NSString).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())*/
             
-            //var k = 1
+            var k = 1
             for i in 1...nhieuDongData.count - 1{
                 var dongData:[String]!
                 dongData = nhieuDongData[i].componentsSeparatedByString("-")
                 //println(String(k))
-                //k++    
+                //k++
                 if iChuDe < dongData[2].toInt()
                 {
                     
@@ -84,9 +84,7 @@ class DSTableViewController: UITableViewController {
         var chon:Int! = selectRow?.row
         var destView : ChoiViewController = segue.destinationViewController as! ChoiViewController
         //println(chon)
-     
-        destView.textChuDe = String(chon)
-        destView.idChuDe = chon + 1
+        destView.idChuDe = chon
         destView.mangChuDe = mangChuDe
      
 

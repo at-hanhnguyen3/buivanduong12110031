@@ -12,16 +12,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eIO-hB-gf7">
-                            <rect key="frame" x="-23" y="-15" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Quay Lai">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <segue destination="vXZ-lx-hvc" kind="modal" id="2ci-D7-L8b"/>
-                            </connections>
-                        </button>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="lKw-jD-c4R">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -43,7 +33,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jA-oa-qKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-583.5" y="-1438.5"/>
+            <point key="canvasLocation" x="-658.5" y="-1433.5"/>
         </scene>
         <!--Choi View Controller-->
         <scene sceneID="f4x-dV-Kfd">
@@ -96,9 +86,6 @@
                                     <action selector="btn1:" destination="seF-J2-K5s" eventType="touchUpInside" id="mU3-uT-uC7"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tMw-bj-nTi">
-                                <rect key="frame" x="10" y="58" width="343" height="312"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMK-ZH-f6Q">
                                 <rect key="frame" x="33" y="20" width="75" height="30"/>
                                 <state key="normal" title="Quay Lai">
@@ -114,6 +101,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tMw-bj-nTi">
+                                <rect key="frame" x="10" y="58" width="343" height="312"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -233,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-719.5" y="-1438.5"/>
+            <point key="canvasLocation" x="-720.5" y="-1533.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="N4C-nc-78H">
@@ -252,10 +242,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6I-LD-3ki" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-609.5" y="-1446.5"/>
+            <point key="canvasLocation" x="-647.5" y="-1515.5"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wHc-52-8fD"/>
+        <segue reference="dZb-k9-hcd"/>
     </inferredMetricsTieBreakers>
 </document>

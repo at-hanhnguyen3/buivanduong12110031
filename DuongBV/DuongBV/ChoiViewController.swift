@@ -2,7 +2,7 @@
 //  ChoiViewController.swift
 //  DuongBV
 //
-//  Created by OceanMAC on 12/23/16.
+//  Created by OceanMAC on 12/12/16.
 //  Copyright (c) 2016 OceanMAC. All rights reserved.
 //
 
@@ -12,8 +12,8 @@ class ChoiViewController: UIViewController {
     var tongCauCanLam = 7
     var ketQua = 0
     var idChuDe = Int();
-    var textChuDe = String();
-    var mangChuDe:[String]!// = ["con vat duoi nuoc","con vat tren can","do vat"]
+
+    var mangChuDe:[String]!/* = ["con vat duoi nuoc","con vat tren can","do vat"]*/
     
     var mangCau:[String]!// = //["cuttle","octopus","shark","dolphin","whale","crocodile","catfish","turtle","frog","shrimp"]
     var cau = 0
@@ -37,6 +37,9 @@ class ChoiViewController: UIViewController {
     @IBOutlet weak var btnC: UIButton!
     @IBAction func btn1(sender: AnyObject) {
         tongCauDaLam = tongCauDaLam + 1
+        if tongCauDaLam > tongCauCanLam - 1{
+            ketQua = ketQua + 1
+        }
         if tongCauDaLam > tongCauCanLam - 1 {
        
             var storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -54,10 +57,12 @@ class ChoiViewController: UIViewController {
                 
                 //doi cau khac
                 cau = random()%15
+                var randcau =  cau   + idChuDe * 15
+                
                 var anhChuoi:String!
-                anhChuoi = mangChuDe[textChuDe.toInt()!] + "/" + String(cau + 1)+".png"
-                //println(mangChuDe[textChuDe.toInt()!])
-                //println(anhChuoi)
+                anhChuoi = String(randcau + 1) + ".png"
+                
+                println(anhChuoi)
                 self.hinhAnh.image = UIImage(named: anhChuoi)
                 
                 //dao ngau nhien cau tra loi dung la A B hay C
@@ -104,6 +109,9 @@ class ChoiViewController: UIViewController {
     @IBAction func btn2(sender: AnyObject) {
         tongCauDaLam = tongCauDaLam + 1
         if tongCauDaLam > tongCauCanLam - 1{
+            ketQua = ketQua + 1
+        }
+        if tongCauDaLam > tongCauCanLam - 1{
             
             var storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             /*var vc:UINavigationController = storyboard.instantiateViewControllerWithIdentifier("idstory") as! UINavigationController*/
@@ -119,11 +127,12 @@ class ChoiViewController: UIViewController {
                 ketQua = ketQua + 1
                 //doi cau khac
                 cau = random()%15
+                var randcau =  cau   + idChuDe * 15
                 
                 var anhChuoi:String!
-                anhChuoi = mangChuDe[textChuDe.toInt()!] + "/" + String(cau + 1)+".png"
-                //println(mangChuDe[textChuDe.toInt()!])
-                //println(anhChuoi)
+                anhChuoi = String(randcau + 1) + ".png"
+                
+                println(anhChuoi)
                 self.hinhAnh.image = UIImage(named: anhChuoi)
                 
                 //dao ngau nhien cau tra loi dung la A B hay C
@@ -139,7 +148,6 @@ class ChoiViewController: UIViewController {
                 while randSai2 == randSai1{
                     randSai2 = random()%15
                 }
- 
                 if rand == 0
                 {
                     lbl1.text = mangCau[cau]
@@ -169,6 +177,9 @@ class ChoiViewController: UIViewController {
     @IBAction func btn3(sender: AnyObject) {
         tongCauDaLam = tongCauDaLam + 1
         if tongCauDaLam > tongCauCanLam - 1{
+            ketQua = ketQua + 1
+        }
+        if tongCauDaLam > tongCauCanLam - 1{
             
             var storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             /*var vc:UINavigationController = storyboard.instantiateViewControllerWithIdentifier("idstory") as! UINavigationController*/
@@ -184,11 +195,12 @@ class ChoiViewController: UIViewController {
                 ketQua = ketQua + 1
                 //doi cau khac
                 cau = random()%15
+                var randcau =  cau   + idChuDe * 15
                 
                 var anhChuoi:String!
-                anhChuoi = mangChuDe[textChuDe.toInt()!] + "/" + String(cau + 1)+".png"
-                //println(mangChuDe[textChuDe.toInt()!])
-                //println(anhChuoi)
+                anhChuoi = String(randcau + 1) + ".png"
+                
+                println(anhChuoi)
                 self.hinhAnh.image = UIImage(named: anhChuoi)
                 
                 //dao ngau nhien cau tra loi dung la A B hay C
@@ -204,7 +216,7 @@ class ChoiViewController: UIViewController {
                 while randSai2 == randSai1{
                     randSai2 = random()%15
                 }
-
+                
                 if rand == 0
                 {
                     lbl1.text = mangCau[cau]
@@ -233,7 +245,7 @@ class ChoiViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //print(String(idChuDe))
         ///
         mangCau = Array(count:500, repeatedValue:String())
        
@@ -250,11 +262,14 @@ class ChoiViewController: UIViewController {
             for i in 1...nhieuDongData.count - 1{
                 var dongData:[String]!
                 dongData = nhieuDongData[i].componentsSeparatedByString("-")
+                /*print(dongData[0])
+                print(dongData[1])
+                print(dongData[2])
+                println(dongData[3])*/
                 //println(String(k))
                 //k++
-                if idChuDe == dongData[2].toInt(){
+                if idChuDe + 1 == dongData[2].toInt(){
                     mangCau[iCau] = dongData[1]
-                    
                     //println(iCau)
                     //println(mangCau[iCau])
                     
@@ -265,12 +280,13 @@ class ChoiViewController: UIViewController {
 
         
         cau = random()%15
-   
-            var anhChuoi:String!
-            anhChuoi = mangChuDe[textChuDe.toInt()!] + "/" + String(cau + 1)+".png"
-            //println(mangChuDe[textChuDe.toInt()!])
-            //println(anhChuoi)
-            self.hinhAnh.image = UIImage(named: anhChuoi)
+        var randcau =  cau   + idChuDe * 15
+        
+        var anhChuoi:String!
+        anhChuoi = String(randcau + 1) + ".png"
+ 
+        //println(anhChuoi)
+        self.hinhAnh.image = UIImage(named: anhChuoi)
         
         //dao ngau nhien cau tra loi dung la A B hay C
         var rand = random()%3
@@ -285,7 +301,6 @@ class ChoiViewController: UIViewController {
         while randSai2 == randSai1{
             randSai2 = random()%15
         }
-
         if rand == 0
         {
             lbl1.text = mangCau[cau]

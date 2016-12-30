@@ -1,0 +1,106 @@
+hinh nghia idChuDe tenChuDe
+1-cuttle-1-con vat duoi nuoc
+2-octopus-1-con vat duoi nuoc
+3-shark-1-con vat duoi nuoc
+4-dolphin-1-con vat duoi nuoc
+5-whale-1-con vat duoi nuoc
+6-crocodile-1-con vat duoi nuoc
+7-catfish-1-con vat duoi nuoc
+8-turtle-1-con vat duoi nuoc
+9-frog-1-con vat duoi nuoc
+10-shrimp-1-con vat duoi nuoc
+11-crab-1-con vat duoi nuoc
+12-jellyfish-1-con vat duoi nuoc
+13-mussel-1-con vat duoi nuoc
+14-eel-1-con vat duoi nuoc
+15-seahorses-1-con vat duoi nuoc
+1-horse-2-con vat tren can
+2-dog-2-con vat tren can
+3-chiken-2-con vat tren can
+4-pig-2-con vat tren can
+5-cat-2-con vat tren can
+6-rabbit-2-con vat tren can
+7-monkey-2-con vat tren can
+8-mouse-2-con vat tren can
+9-squirrel-2-con vat tren can
+10-lion-2-con vat tren can
+11-snake-2-con vat tren can
+12-wolves-2-con vat tren can
+13-panther-2-con vat tren can
+14-deer-2-con vat tren can
+15-elephant-2-con vat tren can
+1-clock-3-do vat
+2-bin-3-do vat
+3-fan-3-do vat
+4-lamp-3-do vat
+5-water bottle-3-do vat
+6-broom-3-do vat
+7-sofa-3-do vat
+8-plastic chair-3-do vat
+9-table-3-do vat
+10-television-3-do vat
+11-refrigerator-3-do vat
+12-rice cooker-3-do vat
+13-bed-3-do vat
+14-pillow-3-do vat
+15-blanket-3-do vat
+1-book-4-goc hoc tap
+2-notebook-4-goc hoc tap
+3-desk-4-goc hoc tap
+4-chair-4-goc hoc tap
+5-laptop-4-goc hoc tap
+6-lamp-4-goc hoc tap
+7-computer mouse-4-goc hoc tap
+8-keyboard-4-goc hoc tap
+9-pencil-4-goc hoc tap
+10-pen-4-goc hoc tap
+11-pair-4-goc hoc tap
+12-eraser-4-goc hoc tap
+13-scissor-4-goc hoc tap
+14-ruler-4-goc hoc tap
+15-protractor-4-goc hoc tap
+1-motorbike-5-phuong tien giao thong
+2-bicycle-5-phuong tien giao thong
+3-electric bicycle-5-phuong tien giao thong
+4-bus-5-phuong tien giao thong
+5-car-5-phuong tien gio thong
+6-truck-5-phuong tien giao thong
+7-jet-5-phuong tien giao thong
+8-subway-5-phuong tien giao thong
+9-cyclo-5-phuong tien giao thong
+10-ship-5-phuong tien giao thong
+11-camel-5-phuong tien giao thong
+12-train-5-phuong tien giao thong
+13-cargo ship-5-phuong tien giao thong
+14-helicopter-5-phuong tien giao thong
+15-horse-5-phuong tien giao thong
+1-banana-6-trai cay
+2-orange-6-trai cay
+3-apple-6-trai cay
+4-grape-6-trai cay
+5-durian-6-trai cay
+6-avocado-6-trai cay
+7-grapefruit-6-trai cay
+8-logan-6-trai cay
+9-jackfruit-6-trai cay
+10-guava-6-trai cay
+11-starfruit-6-trai cay
+12-mangosteen-6-trai cay
+13-watermelon-6-trai cay
+14-pineapple-6-trai cay
+15-papaya-6-trai cay
+1-swallow-7-chim
+2-peacock-7-chim
+3-macaw-7-chim
+4-catbird-7-chim
+5-red whiskered bulbul-7-chim
+6-throstle-7-chim
+7-raven-7-chim
+8-eagle-7-chim
+9-sparrow-7-chim
+10-stork-7-chim
+11-penguins-7-chim
+12-kingfisher-7-chim
+13-cuckoo-7-chim
+14-pelicans-7-chim
+15-creeper-7-chim
