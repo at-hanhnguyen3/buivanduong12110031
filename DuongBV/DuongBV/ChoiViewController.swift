@@ -37,9 +37,11 @@ class ChoiViewController: UIViewController {
     @IBOutlet weak var btnC: UIButton!
     @IBAction func btn1(sender: AnyObject) {
         tongCauDaLam = tongCauDaLam + 1
-        if tongCauDaLam > tongCauCanLam - 1{
+        if lbl1.text == mangCau[cau]
+        {
             ketQua = ketQua + 1
         }
+        
         if tongCauDaLam > tongCauCanLam - 1 {
        
             var storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -51,10 +53,7 @@ class ChoiViewController: UIViewController {
         }
         else
         {
-            if lbl1.text == mangCau[cau]
-            {
-                ketQua = ketQua + 1
-                
+            
                 //doi cau khac
                 cau = random()%15
                 var randcau =  cau   + idChuDe * 15
@@ -100,7 +99,7 @@ class ChoiViewController: UIViewController {
                 }
 
                
-            }
+            
             
         }
 
@@ -108,7 +107,8 @@ class ChoiViewController: UIViewController {
     
     @IBAction func btn2(sender: AnyObject) {
         tongCauDaLam = tongCauDaLam + 1
-        if tongCauDaLam > tongCauCanLam - 1{
+        if lbl2.text == mangCau[cau]
+        {
             ketQua = ketQua + 1
         }
         if tongCauDaLam > tongCauCanLam - 1{
@@ -122,9 +122,7 @@ class ChoiViewController: UIViewController {
         }
         else
         {
-            if lbl2.text == mangCau[cau]
-            {
-                ketQua = ketQua + 1
+            
                 //doi cau khac
                 cau = random()%15
                 var randcau =  cau   + idChuDe * 15
@@ -168,7 +166,7 @@ class ChoiViewController: UIViewController {
                 }
 
                 //
-            }
+            
             
         }
 
@@ -176,7 +174,8 @@ class ChoiViewController: UIViewController {
     }
     @IBAction func btn3(sender: AnyObject) {
         tongCauDaLam = tongCauDaLam + 1
-        if tongCauDaLam > tongCauCanLam - 1{
+        if lbl3.text == mangCau[cau]
+        {
             ketQua = ketQua + 1
         }
         if tongCauDaLam > tongCauCanLam - 1{
@@ -190,9 +189,7 @@ class ChoiViewController: UIViewController {
         }
         else
         {
-            if lbl3.text == mangCau[cau]
-            {
-                ketQua = ketQua + 1
+            
                 //doi cau khac
                 cau = random()%15
                 var randcau =  cau   + idChuDe * 15
@@ -237,7 +234,7 @@ class ChoiViewController: UIViewController {
                 }
 
                 //
-            }
+            
            
         }
 
